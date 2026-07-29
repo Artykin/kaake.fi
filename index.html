@@ -10,6 +10,14 @@
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
+        /* Load custom font */
+        @font-face {
+            font-family: 'Marlboro';
+            src: url('marlboro.regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
         /* Smooth fade-in for page load */
         @keyframes fadeIn {
             from { opacity: 0; }
@@ -45,13 +53,13 @@
                 In Active Development
             </span>
 
-            <!-- Main Heading -->
-            <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight mb-6 pb-2 bg-gradient-to-b from-white to-gray-400 bg-clip-text text-transparent">
+            <!-- Main Heading with Marlboro font applied -->
+            <h1 class="font-['Marlboro'] text-5xl md:text-6xl tracking-tight mb-6 pb-2 bg-gradient-to-b from-white to-gray-400 bg-clip-text text-transparent">
                 Cheatpants
             </h1>
 
             <!-- Subheading -->
-            <p class="text-lg md:text-xl text-gray-400 max-w-2xl mb-10 leading-relaxed">
+            <p class="font-['Marlboro'] text-lg md:text-xl text-gray-400 max-w-2xl mb-10 leading-relaxed">
                 Steam page coming soon!
             </p>
 
